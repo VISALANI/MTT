@@ -1,0 +1,210 @@
+/* ============================================================
+   Multilingual Ticket Translator — Custom Styles
+   ============================================================ */
+
+/* ── Root variables ──────────────────────────────────────────── */
+:root {
+  --primary: #0d6efd;
+  --radius: 10px;
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Global ──────────────────────────────────────────────────── */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Hero banner ─────────────────────────────────────────────── */
+.hero-banner {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 60%, #6610f2 100%);
+}
+
+/* ── Cards ───────────────────────────────────────────────────── */
+.card {
+  border-radius: var(--radius);
+  border: 1px solid #e9ecef;
+  box-shadow: var(--card-shadow);
+}
+
+.card-header {
+  border-radius: var(--radius) var(--radius) 0 0 !important;
+  padding: 1rem 1.25rem;
+}
+
+/* ── Ticket textarea ─────────────────────────────────────────── */
+.ticket-textarea {
+  resize: vertical;
+  min-height: 160px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ticket-textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+/* ── Info cards (language / time) ────────────────────────────── */
+.info-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  min-height: 72px;
+  transition: background 0.2s;
+}
+
+/* ── Result labels ───────────────────────────────────────────── */
+.result-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c757d;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ── Result boxes ────────────────────────────────────────────── */
+.result-box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  min-height: 48px;
+  word-break: break-word;
+}
+
+.result-box.suggested-response {
+  background: #eaf3ff;
+  border-color: #b6d4fe;
+  font-style: italic;
+  color: #0a3971;
+}
+
+/* ── Category pill ───────────────────────────────────────────── */
+.badge-pill {
+  display: inline-block;
+  background: #e9ecef;
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+/* ── Priority badge ──────────────────────────────────────────── */
+.priority-badge {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background: #6c757d; /* default */
+}
+
+.priority-badge.Low      { background: #20c997; }
+.priority-badge.Medium   { background: #fd7e14; }
+.priority-badge.High     { background: #dc3545; }
+.priority-badge.Critical { background: #6f42c1; }
+
+/* ── Sentiment badge ─────────────────────────────────────────── */
+.sentiment-badge {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sentiment-badge.Positive      { background: #d1fae5; color: #065f46; }
+.sentiment-badge.Neutral       { background: #e0f2fe; color: #0c4a6e; }
+.sentiment-badge.Negative      { background: #fee2e2; color: #991b1b; }
+.sentiment-badge.Very\ Negative { background: #fce7f3; color: #831843; }
+
+/* ── Keyword chips ───────────────────────────────────────────── */
+.keyword-chip {
+  background: #e9ecef;
+  border-radius: 50px;
+  padding: 3px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+/* ── Pipeline diagram ────────────────────────────────────────── */
+.pipeline {
+  padding: 8px 0;
+}
+
+.pipeline-step {
+  text-align: center;
+  min-width: 80px;
+}
+
+.pipeline-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 0 auto 6px;
+  transition: transform 0.3s;
+}
+
+.pipeline-step.active .pipeline-icon {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.3);
+}
+
+.pipeline-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6c757d;
+}
+
+.pipeline-arrow {
+  color: #adb5bd;
+  font-size: 1.25rem;
+}
+
+/* ── Example buttons ─────────────────────────────────────────── */
+.example-btn {
+  transition: all 0.15s;
+}
+
+.example-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* ── Submit button loading state ─────────────────────────────── */
+.btn-loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* ── Fade-in animation for results ──────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* ── Responsive tweaks ───────────────────────────────────────── */
+@media (max-width: 576px) {
+  .pipeline-arrow { display: none; }
+  .pipeline { flex-direction: column; align-items: flex-start; }
+}

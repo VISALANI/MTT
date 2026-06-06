@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "language": "Tamil",
+    "ticket_text": "எனது இணையம் வேலை செய்யவில்லை"
+  },
+  {
+    "id": 2,
+    "language": "Hindi",
+    "ticket_text": "मेरा इंटरनेट काम नहीं कर रहा है और मुझे बहुत परेशानी हो रही है"
+  },
+  {
+    "id": 3,
+    "language": "French",
+    "ticket_text": "Je ne peux pas accéder à mon compte depuis deux jours"
+  },
+  {
+    "id": 4,
+    "language": "German",
+    "ticket_text": "Ich kann meine monatliche Rechnung nicht bezahlen, die Zahlungsseite zeigt einen Fehler"
+  },
+  {
+    "id": 5,
+    "language": "Spanish",
+    "ticket_text": "Mi aplicación sigue cerrándose sola cuando intento abrir la configuración"
+  },
+  {
+    "id": 6,
+    "language": "English",
+    "ticket_text": "My account has been locked after multiple failed login attempts. Please help me reset it urgently."
+  },
+  {
+    "id": 7,
+    "language": "Arabic",
+    "ticket_text": "لا أستطيع تسجيل الدخول إلى حسابي منذ أمس"
+  },
+  {
+    "id": 8,
+    "language": "Japanese",
+    "ticket_text": "注文した商品がまだ届いていません。配送状況を確認してください。"
+  }
+]

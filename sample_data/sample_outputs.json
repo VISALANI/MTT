@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "input": {
+      "ticket_text": "எனது இணையம் வேலை செய்யவில்லை"
+    },
+    "output": {
+      "original_text": "எனது இணையம் வேலை செய்யவில்லை",
+      "detected_language": "ta",
+      "language_name": "Tamil",
+      "translation": "My internet is not working",
+      "category": "Network Issue",
+      "priority": "Medium",
+      "summary": "Customer reports that their internet connection is not functioning.",
+      "sentiment": "Negative",
+      "response": "We are sorry to hear about your internet issue. Our team is investigating and will resolve this as quickly as possible.",
+      "keywords": ["internet", "not working", "connectivity"],
+      "processing_time_ms": 1842
+    }
+  },
+  {
+    "id": 2,
+    "input": {
+      "ticket_text": "मेरा इंटरनेट काम नहीं कर रहा है और मुझे बहुत परेशानी हो रही है"
+    },
+    "output": {
+      "original_text": "मेरा इंटरनेट काम नहीं कर रहा है और मुझे बहुत परेशानी हो रही है",
+      "detected_language": "hi",
+      "language_name": "Hindi",
+      "translation": "My internet is not working and I am having a lot of trouble",
+      "category": "Network Issue",
+      "priority": "High",
+      "summary": "Customer is experiencing significant frustration due to internet outage.",
+      "sentiment": "Very Negative",
+      "response": "We sincerely apologize for the inconvenience. Your case has been escalated and our network team will contact you within 2 hours.",
+      "keywords": ["internet", "not working", "trouble", "frustration"],
+      "processing_time_ms": 2103
+    }
+  },
+  {
+    "id": 3,
+    "input": {
+      "ticket_text": "My account has been locked after multiple failed login attempts. Please help me reset it urgently."
+    },
+    "output": {
+      "original_text": "My account has been locked after multiple failed login attempts. Please help me reset it urgently.",
+      "detected_language": "en",
+      "language_name": "English",
+      "translation": "My account has been locked after multiple failed login attempts. Please help me reset it urgently.",
+      "category": "Account Issue",
+      "priority": "High",
+      "summary": "Customer's account is locked due to multiple failed login attempts and needs urgent reset.",
+      "sentiment": "Negative",
+      "response": "We understand this is urgent. Please use our self-service password reset link or contact our 24/7 support line and we will unlock your account immediately.",
+      "keywords": ["account", "locked", "login", "reset", "urgent"],
+      "processing_time_ms": 987
+    }
+  }
+]
